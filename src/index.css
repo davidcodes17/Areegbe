@@ -21,7 +21,8 @@
   animation: 5s slide infinite linear;
 }
 .logo-slide:hover {
-  animation-play-state: paused;
+  animation: 5s slides infinite linear;
+  /* animation-play-state: paused; */
 }
 .animate {
   animation: animateme 6s infinite linear;
@@ -30,8 +31,8 @@
   mix-blend-mode: hard-light !important;
   background: #111;
   transition: none !important;
-  height: 52px;
-  width: 52px;
+  height: 22px;
+  width: 22px;
   z-index: 9999999999999999999999;
   border-radius: 50%;
   position: fixed;
@@ -44,6 +45,14 @@
   }
   to {
     transform: translateX(-100%);
+  }
+}
+@keyframes slides {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
   }
 }
 @keyframes animateme {

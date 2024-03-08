@@ -14,8 +14,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Box bg={"#111"} px={100} py={40} mt={100} color={"#fff"}>
-      <Flex justifyContent={"space-between"}>
+    <Box px={100} py={40} mt={100}>
+      <Flex justifyContent={"space-between"} flexWrap={"wrap"}>
         <Box width={500}>
           <Heading fontFamily={"Anton"} fontSize={100}>
             Let me Handle your Next Project

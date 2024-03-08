@@ -1,4 +1,5 @@
-import { Box, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { Box, CloseButton, Flex, Heading, Image, Text } from "@chakra-ui/react";
+import { motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -20,12 +21,15 @@ const Hero = () => {
         setText(texts[count]);
       }
     }, 4000);
-
-    if (window.innerHeight > 100) {
-      setDis("block");
-    } else {
-      setDis("none");
-    }
+  }, []);
+  useEffect(() => {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 10) {
+        setDis("block");
+      } else {
+        setDis("none");
+      }
+    });
   }, []);
   const [dis, setDis] = useState("block");
   return (
@@ -55,7 +59,7 @@ const Hero = () => {
         p={5}
         borderRadius={40}
         pos={"fixed"}
-        bottom={10}
+        top={10}
         zIndex={999}
       >
         <Box
@@ -80,6 +84,36 @@ const Hero = () => {
           borderRadius={40}
         ></Box>
       </Box>
+      {/* <Box
+        pos={"fixed"}
+        as={motion.div}
+        // whi={{ width: 0,padding : 0, display : "none" }}
+        width={800}
+        zIndex={9999}
+        height={"100%"}
+        top={0}
+        right={0}
+        borderLeftRadius={50}
+        bottom={0}
+        p={"100px"}
+        bg={"#111"}
+      >
+        <Box pos={"relative"}>
+          <CloseButton pos={'absolute'} right={0} />
+          <Heading fontFamily={"Anton"} fontSize={"80px"}>
+            Home
+          </Heading>
+          <Heading fontFamily={"Anton"} pt={5} fontSize={"80px"}>
+            About
+          </Heading>
+          <Heading fontFamily={"Anton"} pt={5} fontSize={"80px"}>
+            Projects
+          </Heading>
+          <Heading fontFamily={"Anton"} pt={5} fontSize={"80px"}>
+            Contact
+          </Heading>
+        </Box>
+      </Box> */}
       <Flex justifyContent={"center"}>
         <Image
           src="/circle.svg"
