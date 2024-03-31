@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 const Project = () => {
   return (
     <Box
+    id="projects"
       bg={"#111"}
       borderRadius={10000000}
       as={motion.div}
@@ -17,13 +18,17 @@ const Project = () => {
         },
       }}
       color={"#fff"}
-      px={50}
+      px={{ lg: 50, md: 50, sm: 10, base: 5 }}
       py={100}
     >
-      <Heading fontFamily={"Anton"} fontSize={100} px={10}>
+      <Heading
+        fontFamily={"Anton"}
+        fontSize={{ lg: 100, md: "80px", sm: "80px", base: "50px" }}
+        px={{ lg: 10, md: 10, sm: 5, base: 5 }}
+      >
         Projects
       </Heading>
-      <Box mt={10}>
+      <Box px={0} mt={{lg : 10, md : 10, sm : 0, base : 0}}>
         <Pj
           img={"/img.png"}
           name={"POSITIVUS"}

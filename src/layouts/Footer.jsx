@@ -7,6 +7,7 @@ import {
   FormLabel,
   Heading,
   Input,
+  Text,
   Textarea,
 } from "@chakra-ui/react";
 import { Send } from "iconsax-react";
@@ -14,14 +15,23 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <Box px={100} py={40} mt={100}>
+    <Box
+    id="contact"
+      px={{ lg: 100, md: "90px", sm: 10, base: 10 }}
+      py={40}
+      mt={{ lg: 100, md: "80px", sm: 0, base: 0 }}
+    >
       <Flex justifyContent={"space-between"} flexWrap={"wrap"}>
-        <Box width={500}>
-          <Heading fontFamily={"Anton"} fontSize={100}>
+        <Box width={{ lg: 500, md: 500, sm: "100%", base: "100%" }}>
+          <Heading
+            fontFamily={"Anton"}
+            mb={{ lg: 0, md: 0, sm: 10, base: 10 }}
+            fontSize={{ lg: 100, md: "90px", sm: "60px", base: 50 }}
+          >
             Let me Handle your Next Project
           </Heading>
         </Box>
-        <Box width={"30vw"}>
+        <Box width={{ lg: "30vw", md: "100%", sm: "100%", base : "100%" }} mt={"20px"}>
           <FormControl>
             <FormLabel>Email Address</FormLabel>
             <Input width={"100%"} placeholder="you@gmail.com" fontSize={12} />
@@ -42,7 +52,9 @@ const Footer = () => {
           >
             Send Message
           </Button>
-          <Checkbox fontSize={12} pt={5}>I aggree to the Terms and Condition for Sending mail</Checkbox>
+          <Checkbox  pt={5}>
+            <Text fontSize={14}>I aggree to the Terms and Condition for Sending mail</Text>
+          </Checkbox>
         </Box>
       </Flex>
     </Box>

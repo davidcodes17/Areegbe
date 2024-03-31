@@ -39,7 +39,7 @@ const Hero = () => {
           <Heading
             bgGradient="linear(to-l, #7928CA, #FF0080)"
             bgClip="text"
-            fontSize="5xl"
+            fontSize={{lg : "5xl", md : "4xl", sm : "4xl", base : "3xl"}}
             fontWeight="extrabold"
             fontFamily={"Anton"}
             px={10}
@@ -53,13 +53,13 @@ const Hero = () => {
       <Box
         bg={"#000"}
         right={10}
-        display={dis}
+        display={{lg : dis, md : dis, sm : "block", base : "block"}}
         cursor={"pointer"}
         width={"fit-content"}
         p={5}
         borderRadius={40}
         pos={"fixed"}
-        top={10}
+        top={{lg : 10,md : 10, sm : 5, base : 2}}
         zIndex={999}
       >
         <Box
@@ -117,8 +117,8 @@ const Hero = () => {
       <Flex justifyContent={"center"}>
         <Image
           src="/circle.svg"
-          width={"10%"}
-          mt={20}
+          width={{lg : "10%", md : "25%", sm : "25%", base : "30%"}}
+          mt={{lg : 20, md : "100px", sm : "70px", base : 9}}
           className="animate"
           left={0}
           right={0}
@@ -126,7 +126,7 @@ const Hero = () => {
       </Flex>
       <Box className="logos">
         <Box className="logo-slide">
-          <Image src="/david.svg" />
+          <Image  src="/david.svg" />
           <Image src="/david.svg" />
           <Image src="/david.svg" />
           <Image src="/david.svg" />

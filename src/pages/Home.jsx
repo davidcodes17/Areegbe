@@ -15,7 +15,7 @@ const Home = () => {
   });
   console.log(mousePosition);
   useEffect(() => {
-    console.log(scroll.scrollY)
+    console.log(scroll.scrollY);
     const mouseMove = (e) => {
       setMousePosition({
         x: e.clientX,
@@ -31,7 +31,7 @@ const Home = () => {
   }, []);
   const variants = {
     default: {
-      x: mousePosition.x-16,
+      x: mousePosition.x - 16,
       y: mousePosition.y,
     },
   };
@@ -41,7 +41,7 @@ const Home = () => {
         width={"100vw"}
         p={5}
         color={"#fff"}
-        height={"100vh"}
+        height={{ lg: "100vh", md: "100vh", sm: "80vh", base: "70vh" }}
         bgImage={"/bg.jpg"}
         bgSize={"cover"}
         pos={"relative"}
