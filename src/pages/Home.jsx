@@ -41,7 +41,7 @@ const Home = () => {
         width={"100vw"}
         p={5}
         color={"#fff"}
-        height={{ lg: "100vh", md: "100vh", sm: "80vh", base: "70vh" }}
+        height={{ lg: "100vh", md: "100vh", sm: "100vh", base: "80vh" }}
         bgImage={"/bg.jpg"}
         bgSize={"cover"}
         pos={"relative"}

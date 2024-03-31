@@ -42,7 +42,7 @@ const Pj = ({ justifyContent, name, des, git, link, img }) => {
           objectFit={{ lg: "fill", md: "contain", sm: "contain", base: "contain" }}
           bgPos={"center"}
         />
-        <Box py={5} width={{ lg: 600, md: 500, sm: "100%", base: "100%" }}>
+        <Box py={{lg : 5, md : 5, sm  : 0, base : 0}} width={{ lg: 600, md: 500, sm: "100%", base: "100%" }}>
           <Heading
             fontSize={{ lg: 60, md: 50, sm: 40, base: 40 }}
             fontWeight={400}

@@ -33,6 +33,7 @@ const Project = () => {
           img={"/img.png"}
           name={"POSITIVUS"}
           justifyContent={"left"}
+          link={"https://positivus-liart.vercel.app/"}
           git={"https://github.com/davidcodes17/Positivus"}
           des={
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt officia neque eaque temporibus reprehenderit eius amet iure, recusandae dignissimos, quos nostrum hic itaque minima vitae magnam veritatis inventore molestias?"
@@ -41,8 +42,9 @@ const Project = () => {
         <Pj
           img={"/lff.png"}
           name={"LFF SORTING OUT"}
+          link={"https://theoslogion.org/"}
           justifyContent={"right"}
-          git={""}
+          git={"https://github.com/davidcodes17/LFF"}
           des={
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt officia neque eaque temporibus reprehenderit eius amet iure, recusandae dignissimos, quos nostrum hic itaque minima vitae magnam veritatis inventore molestias?"
           }
@@ -50,8 +52,9 @@ const Project = () => {
         <Pj
           img={"/ecommerce.png"}
           name={"AUTUMN SALES"}
+          link={"https://dc-fakeapi.vercel.app/"}
           justifyContent={"left"}
-          git={""}
+          git={"https://github.com/davidcodes17/ecommerce-shop-starter"}
           des={
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt officia neque eaque temporibus reprehenderit eius amet iure, recusandae dignissimos, quos nostrum hic itaque minima vitae magnam veritatis inventore molestias?"
           }
@@ -60,7 +63,8 @@ const Project = () => {
           img={"/phone.png"}
           name={"DC PHONEBOOK"}
           justifyContent={"right"}
-          git={""}
+          link={"https://phone-book-indol-gamma.vercel.app/"}
+          git={"https://github.com/davidcodes17/PhoneBook-Frontend"}
           des={
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt officia neque eaque temporibus reprehenderit eius amet iure, recusandae dignissimos, quos nostrum hic itaque minima vitae magnam veritatis inventore molestias?"
           }
@@ -69,7 +73,8 @@ const Project = () => {
           img={"/hair.png"}
           name={"LITTLE HAIR NEST"}
           justifyContent={"left"}
-          git={""}
+          link={"https://little-hair-nest2.vercel.app/"}
+          git={"https://github.com/davidcodes17/Little-Hair-Nest2"}
           des={
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt officia neque eaque temporibus reprehenderit eius amet iure, recusandae dignissimos, quos nostrum hic itaque minima vitae magnam veritatis inventore molestias?"
           }
@@ -78,7 +83,8 @@ const Project = () => {
           img={"/bank.png"}
           name={"BANQUEEE"}
           justifyContent={"right"}
-          git={""}
+          link={"https://banking-app-psi-seven.vercel.app/"}
+          git={"https://banking-app-psi-seven.vercel.app/"}
           des={
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt officia neque eaque temporibus reprehenderit eius amet iure, recusandae dignissimos, quos nostrum hic itaque minima vitae magnam veritatis inventore molestias?"
           }
@@ -87,7 +93,8 @@ const Project = () => {
           img={"/rob.png"}
           name={"ROBO FRIENDS"}
           justifyContent={"left"}
-          git={""}
+          link={"https://robotfriend-dc.netlify.app/"}
+          git={"https://github.com/davidcodes17/Robo-Friends-API"}
           des={
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt officia neque eaque temporibus reprehenderit eius amet iure, recusandae dignissimos, quos nostrum hic itaque minima vitae magnam veritatis inventore molestias?"
           }
@@ -96,7 +103,8 @@ const Project = () => {
           img={"/fig.png"}
           name={"FIGMA LAND"}
           justifyContent={"right"}
-          git={""}
+          link={"https://figmalander.netlify.app/"}
+          git={"https://github.com/davidcodes17/FIGMA-LAND"}
           des={
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deserunt officia neque eaque temporibus reprehenderit eius amet iure, recusandae dignissimos, quos nostrum hic itaque minima vitae magnam veritatis inventore molestias?"
           }

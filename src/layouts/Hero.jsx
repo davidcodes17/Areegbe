@@ -39,7 +39,8 @@ const Hero = () => {
           <Heading
             bgGradient="linear(to-l, #7928CA, #FF0080)"
             bgClip="text"
-            fontSize={{lg : "5xl", md : "4xl", sm : "4xl", base : "3xl"}}
+            fontSize={{lg : "5xl", md : "4xl", sm : "4xl", base : "25px"}}
+            textAlign={"center"}
             fontWeight="extrabold"
             fontFamily={"Anton"}
             px={10}
